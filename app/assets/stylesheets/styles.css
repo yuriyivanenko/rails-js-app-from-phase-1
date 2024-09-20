@@ -1,0 +1,82 @@
+#scanner{
+  display: block;
+}
+
+#chart{
+  display: none;
+}
+
+#wallet{
+  display: none;
+}
+
+.crypto-card {
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.crypto-card .details {
+  width: 300px; /* Fixed width */
+  margin-left: 15px;
+  flex-shrink: 0;
+}
+.crypto-card .details .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.crypto-card .details .info {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #6c757d;
+}
+.crypto-card .details .info .icon-text {
+  display: flex;
+  align-items: center;
+}
+.crypto-card .arrow {
+  margin-left: auto;
+  font-size: 24px;
+  color: #6c757d;
+}
+
+.crypto-card .star-icon {
+  color: rgb(253, 162, 4); /* Red color */;
+}
+
+.price-container{
+  width: 300px;
+}
+
+.wallet-cards{
+  height: 110px;
+  width: 300px;
+}
+
+.transaction-card{
+  height: 300px;
+  width: 500px;
+}
+
+/* Define the keyframes for the spin animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Class to apply the spin animation */
+.spin {
+  animation: spin 1s infinite linear;
+}
+
+.icon-img{
+  background-image: url('assets/64/bitcoin.png');
+}
